@@ -5,7 +5,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <style>
       html, body {
-      
       display: flex;
       justify-content: center;
       font-family: Roboto, Arial, sans-serif;
@@ -67,9 +66,10 @@
       <hr/>
       <div class="container">
         <label for="uname"><strong>Username</strong></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Username" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="15"  name="uname" required><label for="mail"><strong>E-mail</strong></label>
+        <input type="text" placeholder="Enter E-mail" pattern=".+@gmail\.com|.+@hotmail\.com" name="mail" required>
         <label for="psw"><strong>Password</strong></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="15"  name="psw" required>
       </div>
       <button type="submit">Login</button>
       <div class="container" style="background-color: #eee">

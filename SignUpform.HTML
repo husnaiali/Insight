@@ -74,11 +74,11 @@
       <div class="formcontainer">
       <div class="container">
         <label for="uname"><strong>Username</strong></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Username" id="uname" name="Username" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="15">
         <label for="mail"><strong>E-mail</strong></label>
-        <input type="text" placeholder="Enter E-mail" name="mail" required>
+        <input type="text" placeholder="Enter E-mail" pattern=".+@gmail\.com|.+@hotmail\.com" name="mail" required>
         <label for="psw"><strong>Password</strong></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" minlength="4" maxlength="15" required>
       </div>
       <button type="submit"><strong>SIGN UP</strong></button>
       <div class="container" style="background-color: #eee">
